@@ -97,6 +97,9 @@
           _self.mp.unbindPlayerInstance();
           console.log("destorying");
         }
+        else {
+          return;
+        }
       }
     }
   window.VideoPlayerPlugin = VideoPlayerPlugin;
