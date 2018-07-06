@@ -4,13 +4,13 @@
 - 实测，支持 .mp4 格式。
 - 使用 NGB-H 技术规范。
 
-## 使用方法：
+## 使用方法(参考 index.html)
 
 ```
 new VideoPlayerPlugin(xAxis,yAxis,width,height,fullScreen,url);
 ```
 
-### 参数说明：
+### 参数说明
 
 1. xAxis: 视频区域左上角的 x 轴坐标值。数据类型：number。
 2. yAxis: 同上。
