@@ -58,28 +58,28 @@
         }
       },
       _create: function (url, _self) {
-          _self.mp = new MediaPlayer();
-          if (typeof (_self.mp) != "object") {
-            console.log("Failed to create media player");
-            return;
-          }
-          var id = _self.mp.getPlayerInstanceID();
-          var flag = _self.mp.bindPlayerInstance(id);
-          if (flag != 0) {
-            console.log("Failed to bind player instance");
-            return;
-          }
-          _self.mp.enableTrickMode(1);
-          if(_self.fullScreen) {
-            _self.mp.setVideoDisplayMode(1);
-            _self.fullScreenFlag = true;
-          }
-          else {
-            _self.mp.setVideoDisplayMode(0);
-            _self.fullScreenFlag = false;
-          }
-          _self.mp.setVideoDisplayArea(_self.rect);
-          _self.mp.refresh();
+        _self.mp = new MediaPlayer();
+        if (typeof (_self.mp) != "object") {
+          console.log("Failed to create media player");
+          return;
+        }
+        var id = _self.mp.getPlayerInstanceID();
+        var flag = _self.mp.bindPlayerInstance(id);
+        if (flag != 0) {
+          console.log("Failed to bind player instance");
+          return;
+        }
+        _self.mp.enableTrickMode(1);
+        if(_self.fullScreen) {
+          _self.mp.setVideoDisplayMode(1);
+          _self.fullScreenFlag = true;
+        }
+        else {
+          _self.mp.setVideoDisplayMode(0);
+          _self.fullScreenFlag = false;
+        }
+        _self.mp.setVideoDisplayArea(_self.rect);
+        _self.mp.refresh();
     
         var source = url;
         console.log("videoURL is:"+ source);
