@@ -14,11 +14,6 @@
       constructor: VideoPlayerPlugin,
       init: function () {
         var _self = this;
-        // if (_self.xAxis === null) _self.xAxis = 100;
-        // if (_self.yAxis === null) _self.yAxis = 100;
-        // if (_self.width === null) _self.width = 480;
-        // if (_self.height === null) _self.height = 320;
-        // if (_self.fullScreen === null) _self.fullScreen = false;
         _self.rect = new Rectangle(_self.xAxis, _self.yAxis, _self.width, _self.height);
         document.onsystemevent = grabEvent;
         document.onkeydown = grabEvent;
@@ -97,9 +92,11 @@
         }
       },
       destroy: function () {
-        _self.mp.stop();
-        _self.mp.unbindPlayerInstance();
-        console.log("destorying");
+        if(_self.mp) {
+          _self.mp.stop();
+          _self.mp.unbindPlayerInstance();
+          console.log("destorying");
+        }
       }
     }
   window.VideoPlayerPlugin = VideoPlayerPlugin;
