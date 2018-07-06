@@ -11,6 +11,7 @@
     "player",
     "UUTVOS"
   ],
-  "author": "",
+  "repository": "git@github.com:Lukang689/tv-video-player-plugin.git",
+  "author": "lukang <lukang8596@outlook.com>",
   "license": "MIT"
 }
