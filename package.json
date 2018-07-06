@@ -1,0 +1,16 @@
+{
+  "name": "tv-video-player-plugin",
+  "version": "1.0.0",
+  "description": "video player for UUTVOS  ",
+  "main": "tv-video-player-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video",
+    "player",
+    "UUTVOS"
+  ],
+  "author": "",
+  "license": "MIT"
+}
