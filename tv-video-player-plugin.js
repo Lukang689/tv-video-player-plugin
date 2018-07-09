@@ -93,9 +93,9 @@
         }
       },
       destroy: function () {
-        if(_self.mp) {
-          _self.mp.stop();
-          _self.mp.unbindPlayerInstance();
+        if(this.mp) {
+          this.mp.stop();
+          this.mp.unbindPlayerInstance();
           console.log("destorying");
         }
         else {
