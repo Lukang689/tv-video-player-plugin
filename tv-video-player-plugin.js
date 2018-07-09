@@ -96,7 +96,7 @@
         if(this.mp) {
           this.mp.stop();
           this.mp.unbindPlayerInstance();
-          console.log("destorying");
+          console.log("destoryed");
         }
         else {
           return;
